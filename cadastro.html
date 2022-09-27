@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Formulario</title>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+   <body>
+    <div id="formCadastro"> 
+        <form action="#" method="get">
+            <fieldset class="formCadastro">
+                <legend>Dados Pessoais</legend>
+                <label for="iNome">Login: </label>
+            <input type="text" name="Nome" id="iNome" placeholder="Digite o nome: " required size="30" maxlength="30">
+            <label for="iSenha">Senha: </label>
+            <input type="password" name="senha" id="iSenha" placeholder="Digite a senha: " required size="30" size="20" maxlength="20">
+            <input type="submit" value="cadastrar">
+
+           <div>
+               <label for="iCidade">Cidade: </label>
+               <input type="text" name="cidade" id="iCidade">
+               <label for="iEstado">Estado: </label>
+               <select name="estado" id="iEstado">
+                   <optgroup label="Região Sudeste">
+                       <option value="SP">SP</option>
+                       <option value="MG">MG</option>
+                       <option value="RJ">RJ</option>
+                       <option value="ES">ES</option>
+
+                   </optgroup>
+               </select>
+           </div>
+        </fieldset>
+
+         <fieldset class="formCadastro">
+             <legend>Dados Combraças</legend>
+  <div>
+      <label for="iCor">Cor Preferida: </label>
+       <input type="color" name="Cor" id="iCor">
+       <label for="iData">Data de nascimento</label>
+       <input type="date" name="Data" id="iData">
+    
+       <label for="iCivil">Estado Civil</label>
+       <select name="Civil" id="Icivil">
+           <optgroup label="Estado Civil">
+               <option value="CASADO">Casado</option>
+               <option value="Solteiro">Solteiro</option>
+               <option value="Vilvo">Vilvo</option>
+           </optgroup>
+       </select>
+  </div>
+         </fieldset>
+        </form>
+    </div>
+   <h2>
+       Formulario de cadastro 
+   </h2>
+
+
+</body>
+</html>
